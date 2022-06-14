@@ -170,26 +170,26 @@
         <!-- </div>
         <div class="row"> -->
           <h2 class="h5 mb-4">Consultores:</h2>
-            <div class="col-lg-4 col-md-4 col-md-3">              
-              <select class="form-select" id="country" required multiple aria-label="multiple select example">
-                <option value="">Choose...</option>
-                <option>United States</option>
+            <div class="col-lg-5 col-md-5">              
+              <select class="form-select" id="avaible" required multiple aria-label="multiple select example">
+               
+                
               </select>
               <div class="invalid-feedback">
-                Please select a valid country.
+                Please select a valid data.
               </div>
             </div>
             <div class="col-lg-2 col-md-2 ">
               <div class="d-grid gap-2 col-6 mx-auto">
-                <button type="button" class="btn btn-outline-primary"><<</button>              
-                <button type="button" class="btn btn-outline-primary">>></button> 
+                <button type="button" class="btn btn-outline-primary" onClick="move(selected, avaible)"><<</button>              
+                <button type="button" class="btn btn-outline-primary" onClick="move(avaible, selected)">>></button> 
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-3">             
-              <select class="form-select" id="state" required multiple aria-label="multiple select example">
-                <option value="">Choose...</option>
-                <option>California</option>
+            <div class="col-lg-5 col-md-5">             
+              <select class="form-select" id="selected" required multiple aria-label="multiple select example">
+                
+                
               </select>
               <div class="invalid-feedback">
                 Please provide a valid state.
@@ -311,6 +311,11 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
     <script src="/asset/js/chartBar.js"></script>
-    <script src="/asset/js/chartPastel.js"></script>
+    <script src="/asset/js/chartPastel.js" ></script>
+    <script src="/asset/js/functions.js"></script>
+    <script src="/asset/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+      getItems();
+  </script>
   </body>
 </html>
