@@ -157,13 +157,13 @@
           <h2 class="h5 mb-4">Periodo:</h2>
           <div class="col-lg-4 col-md-5 mb-4">
             <label for="startDate" class="form-label">Inicio:</label>            
-            <input id="startDate" class="form-control" type="month" />
+            <input id="startDate" class="form-control" type="date" />
             <span id="startDateSelected"></span>
         </div>
         
         <div class="col-lg-4 col-md-5 mb-4">   
           <label for="endDate" class="form-label">Final:</label>         
-            <input id="endDate" class="form-control" type="month" />
+            <input id="endDate" class="form-control" type="date" />
             <span id="endDateSelected"></span>
         </div>
         
@@ -181,8 +181,8 @@
             </div>
             <div class="col-lg-2 col-md-2 ">
               <div class="d-grid gap-2 col-6 mx-auto">
-                <button type="button" class="btn btn-outline-primary" onClick="move(selected, avaible)"><<</button>              
                 <button type="button" class="btn btn-outline-primary" onClick="move(avaible, selected)">>></button> 
+                <button type="button" class="btn btn-outline-primary" onClick="move(selected, avaible)"><<</button>
               </div>
             </div>
 
@@ -205,7 +205,7 @@
               </svg>              
               Relatorio
             </button>             
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" class="btn btn-outline-primary" onclick="getReceitas()">
               <svg class="bi bi-bar-chart" width="16" height="16" fill="currentColor"><use xlink:href="#bar"/>
               </svg>
               Gráfico
@@ -217,7 +217,7 @@
             </button>
           </div>
         </div>
-        <div>
+        <div id="showResult">
         <table class="table caption-top">
           <caption>Juan Alberto</caption>
           <thead>
